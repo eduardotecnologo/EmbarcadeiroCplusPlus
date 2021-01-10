@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2021/01/10 09:00:30.065,=C:\Users\E\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2021/01/10 09:00:30.409,=C:\Users\E\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2021/01/10 09:00:51.358,C:\Users\E\Documents\GIT\EmbarcadeiroCplusPlus\Unit1.cpp=C:\Users\E\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2021/01/10 09:00:51.358,C:\Users\E\Documents\GIT\EmbarcadeiroCplusPlus\Unit1.fmx=C:\Users\E\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2021/01/10 09:00:51.358,C:\Users\E\Documents\GIT\EmbarcadeiroCplusPlus\Unit1.h=C:\Users\E\Documents\Embarcadero\Studio\Projects\Unit1.h</Transaction>
+    <Transaction>2021/01/10 09:01:52.741,C:\Users\E\Documents\GIT\EmbarcadeiroCplusPlus\Teste_one.h=C:\Users\E\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2021/01/10 09:01:58.310,C:\Users\E\Documents\GIT\EmbarcadeiroCplusPlus\Project1.cbproj=C:\Users\E\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>
