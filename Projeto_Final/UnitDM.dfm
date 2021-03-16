@@ -14,12 +14,12 @@ object DM: TDM
       'DriverID=FB')
     Connected = True
     LoginPrompt = False
-    Left = 392
+    Left = 360
     Top = 16
   end
   object FDPhysFBDriverLink1: TFDPhysFBDriverLink
     VendorLib = 'E:\DB\Firebird_2_5\WOW64\fbclient.dll'
-    Left = 464
+    Left = 456
     Top = 16
   end
   object FDQueryExibir: TFDQuery
@@ -116,7 +116,7 @@ object DM: TDM
   object FDQueryExcluir: TFDQuery
     Connection = ConnDB
     SQL.Strings = (
-      'delete from cliente whare id=:id')
+      'delete from cliente where id=:id')
     Left = 32
     Top = 232
     ParamData = <

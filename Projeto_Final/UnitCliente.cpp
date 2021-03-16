@@ -25,3 +25,38 @@ void __fastcall TFormCliente::btnSairClick(TObject *Sender)
 }
 //---------------------------------------------------------------------------
 
+void __fastcall TFormCliente::Hab_botoes(TObject *Sender)
+{
+	btnIncluir->Enabled = true;
+	btnAlterar->Enabled = true;
+	btnExcluir->Enabled = true;
+	btnCancelar->Enabled = false;
+	btnGravar->Enabled = false;
+	btnSair->Enabled = true;
+}
+
+void __fastcall TFormCliente::Des_botoes(TObject *Sender)
+{
+	btnIncluir->Enabled = false;
+	btnAlterar->Enabled = false;
+	btnExcluir->Enabled = false;
+	btnCancelar->Enabled = true;
+	btnGravar->Enabled = true;
+	btnSair->Enabled = false;
+}
+
+void __fastcall TFormCliente::Habilitar_campos(bool valor)
+{
+	EditName->Enabled = valor;
+	EditEndereco->Enabled = valor;
+	EditCidade->Enabled = valor;
+	ComboBoxUF->Enabled = valor;
+}
+
+void __fastcall TFormCliente::LimparCampos()
+{
+	EditId->Text = " ";
+	EditEndereco->Text = " ";
+	EditCidade->Text = " ";
+	ComboBoxUF->ItemIndex = 0;
+}

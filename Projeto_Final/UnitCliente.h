@@ -43,6 +43,10 @@ __published:	// IDE-managed Components
 private:	// User declarations
 public:		// User declarations
 	__fastcall TFormCliente(TComponent* Owner);
+	void __fastcall Hab_botoes(TObject *Sender);
+	void __fastcall Des_botoes(TObject *Sender);
+	void __fastcall Habilitar_campos(bool valor);
+	void __fastcall LimparCampos();
 };
 //---------------------------------------------------------------------------
 extern PACKAGE TFormCliente *FormCliente;
