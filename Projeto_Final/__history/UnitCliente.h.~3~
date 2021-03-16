@@ -1,0 +1,35 @@
+//---------------------------------------------------------------------------
+
+#ifndef UnitClienteH
+#define UnitClienteH
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+#include <Vcl.Buttons.hpp>
+#include <Vcl.ComCtrls.hpp>
+#include <Vcl.ExtCtrls.hpp>
+//---------------------------------------------------------------------------
+class TFormCliente : public TForm
+{
+__published:	// IDE-managed Components
+	TPanel *Panel1;
+	TBitBtn *btnIncluir;
+	TBitBtn *btnAlterar;
+	TBitBtn *btnExcluir;
+	TBitBtn *btnCancelar;
+	TBitBtn *btnGravar;
+	TBitBtn *btnSair;
+	TPageControl *Page1;
+	TTabSheet *TabArquivo;
+	TTabSheet *TabDados;
+	void __fastcall FormClose(TObject *Sender, TCloseAction &Action);
+private:	// User declarations
+public:		// User declarations
+	__fastcall TFormCliente(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TFormCliente *FormCliente;
+//---------------------------------------------------------------------------
+#endif

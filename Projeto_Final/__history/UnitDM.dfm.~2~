@@ -1,0 +1,25 @@
+object DM: TDM
+  OldCreateOrder = False
+  Height = 318
+  Width = 530
+  object ConnDB: TFDConnection
+    Params.Strings = (
+      
+        'Database=C:\Users\E\OneDrive\Documentos\GIT\EmbarcadeiroCplusPlu' +
+        's\Projeto_Final\DB\PROJETO_FINAL.FDB'
+      'User_Name=SYSDBA'
+      'Password=masterkey'
+      'Server=localhost'
+      'CharacterSet=WIN1252'
+      'DriverID=FB')
+    Connected = True
+    LoginPrompt = False
+    Left = 168
+    Top = 104
+  end
+  object FDPhysFBDriverLink1: TFDPhysFBDriverLink
+    VendorLib = 'E:\DB\Firebird_2_5\WOW64\fbclient.dll'
+    Left = 272
+    Top = 104
+  end
+end
