@@ -9,9 +9,9 @@
 #pragma package(smart_init)
 #pragma resource "*.dfm"
 TFormCliente *FormCliente;
-int situacao; // Situação = 1 (Incluir) Situação = 2 (Alterar)
+int situacao;
 //---------------------------------------------------------------------------
-__fastcall TFormCliente::TFormCliente(TComponent* Owner)
+ __fastcall TFormCliente::TFormCliente(TComponent* Owner)
 	: TForm(Owner)
 {
 }
@@ -58,7 +58,6 @@ void __fastcall TFormCliente::Habilitar_campos(bool valor)
 void __fastcall TFormCliente::LimparCampos()
 {
 	EditId->Text = " ";
-	EditName->Text = " ";
 	EditEndereco->Text = " ";
 	EditCidade->Text = " ";
 	ComboBoxUF->ItemIndex = 0;
@@ -71,7 +70,7 @@ void __fastcall TFormCliente::FormCreate(TObject *Sender)
 
 void __fastcall TFormCliente::FormActivate(TObject *Sender)
 {
-	Hab_botoes(FormCliente);
+    Hab_botoes(FormCliente);
 }
 //---------------------------------------------------------------------------
 
@@ -84,8 +83,7 @@ void __fastcall TFormCliente::btnIncluirClick(TObject *Sender)
    LimparCampos();
    Habilitar_campos(true);
    Des_botoes(FormCliente);
-  // EditName->SetFocus;
+   EditName->SetFocus;
 }
-
 //---------------------------------------------------------------------------
 

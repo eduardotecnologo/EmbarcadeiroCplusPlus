@@ -58,7 +58,6 @@ void __fastcall TFormCliente::Habilitar_campos(bool valor)
 void __fastcall TFormCliente::LimparCampos()
 {
 	EditId->Text = " ";
-	EditName->Text = " ";
 	EditEndereco->Text = " ";
 	EditCidade->Text = " ";
 	ComboBoxUF->ItemIndex = 0;
@@ -84,7 +83,7 @@ void __fastcall TFormCliente::btnIncluirClick(TObject *Sender)
    LimparCampos();
    Habilitar_campos(true);
    Des_botoes(FormCliente);
-  // EditName->SetFocus;
+   EditName->SetFocus;
 }
 
 //---------------------------------------------------------------------------

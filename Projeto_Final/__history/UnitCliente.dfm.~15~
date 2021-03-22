@@ -370,7 +370,7 @@ object FormCliente: TFormCliente
         TabOrder = 2
       end
       object EditName: TEdit
-        Left = 132
+        Left = 124
         Top = 65
         Width = 257
         Height = 27

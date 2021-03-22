@@ -293,6 +293,10 @@ object FormCliente: TFormCliente
     TabOrder = 1
     object TabArquivo: TTabSheet
       Caption = 'Arquivo'
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object DBGrid1: TDBGrid
         Left = 0
         Top = 0
@@ -310,6 +314,10 @@ object FormCliente: TFormCliente
     object TabDados: TTabSheet
       Caption = 'Dados'
       ImageIndex = 1
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object Label1: TLabel
         Left = 95
         Top = 19

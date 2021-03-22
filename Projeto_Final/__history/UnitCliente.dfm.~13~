@@ -288,7 +288,7 @@ object FormCliente: TFormCliente
     Top = 0
     Width = 881
     Height = 306
-    ActivePage = TabDados
+    ActivePage = TabArquivo
     Align = alClient
     TabOrder = 1
     object TabArquivo: TTabSheet

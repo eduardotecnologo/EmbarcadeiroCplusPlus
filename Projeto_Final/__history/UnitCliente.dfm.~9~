@@ -11,7 +11,6 @@ object FormCliente: TFormCliente
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
-  OnActivate = FormActivate
   OnClose = FormClose
   OnCreate = FormCreate
   PixelsPerInch = 96
@@ -68,7 +67,6 @@ object FormCliente: TFormCliente
         000000000000000000000000000000000000C40953D0F93FADF7EE2982ED1F10
         3AEA00000000}
       TabOrder = 0
-      OnClick = btnIncluirClick
     end
     object btnAlterar: TBitBtn
       Left = 224
