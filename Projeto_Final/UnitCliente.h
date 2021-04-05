@@ -38,12 +38,17 @@ __published:	// IDE-managed Components
 	TEdit *EditName;
 	TLabel *Label5;
 	TComboBox *ComboBoxUF;
+	TDataSource *DSClient;
 	void __fastcall FormClose(TObject *Sender, TCloseAction &Action);
 	void __fastcall btnSairClick(TObject *Sender);
 	void __fastcall FormCreate(TObject *Sender);
 	void __fastcall FormActivate(TObject *Sender);
 	void __fastcall btnIncluirClick(TObject *Sender);
 	void __fastcall btnGravarClick(TObject *Sender);
+	void __fastcall TabArquivoShow(TObject *Sender);
+	void __fastcall DSClientDataChange(TObject *Sender, TField *Field);
+	void __fastcall btnAlterarClick(TObject *Sender);
+	void __fastcall btnCancelarClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TFormCliente(TComponent* Owner);
@@ -51,6 +56,7 @@ public:		// User declarations
 	void __fastcall Des_botoes(TObject *Sender);
 	void __fastcall Habilitar_campos(bool valor);
 	void __fastcall LimparCampos();
+    void __fastcall DBForIntefaces();
 };
 //---------------------------------------------------------------------------
 extern PACKAGE TFormCliente *FormCliente;

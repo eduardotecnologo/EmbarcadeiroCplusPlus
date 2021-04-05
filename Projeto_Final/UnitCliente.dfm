@@ -113,6 +113,7 @@ object FormCliente: TFormCliente
         B579F3DEB578F3DEB576F3DDB475F3DDB474F6E3B97AD9CF99540AB86D260000
         000000000000}
       TabOrder = 1
+      OnClick = btnAlterarClick
     end
     object btnExcluir: TBitBtn
       Left = 336
@@ -201,6 +202,7 @@ object FormCliente: TFormCliente
         000000000000000000000000000000000000000000001C0600F0681109F0B627
         28F1A71F1EF2}
       TabOrder = 3
+      OnClick = btnCancelarClick
     end
     object btnGravar: TBitBtn
       Left = 560
@@ -289,23 +291,57 @@ object FormCliente: TFormCliente
     Top = 0
     Width = 881
     Height = 306
-    ActivePage = TabDados
+    ActivePage = TabArquivo
     Align = alClient
     TabOrder = 1
     object TabArquivo: TTabSheet
       Caption = 'Arquivo'
+      OnShow = TabArquivoShow
       object DBGrid1: TDBGrid
         Left = 0
         Top = 0
         Width = 873
         Height = 272
         Align = alClient
+        DataSource = DM.DSExibir
+        Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
+        ReadOnly = True
         TabOrder = 0
         TitleFont.Charset = DEFAULT_CHARSET
         TitleFont.Color = clWindowText
         TitleFont.Height = -16
         TitleFont.Name = 'Tahoma'
         TitleFont.Style = []
+        Columns = <
+          item
+            Expanded = False
+            FieldName = 'ID'
+            Width = 45
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = 'NOME'
+            Width = 200
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = 'ENDERECO'
+            Width = 200
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = 'CIDADE'
+            Width = 150
+            Visible = True
+          end
+          item
+            Expanded = False
+            FieldName = 'ESTADO'
+            Visible = True
+          end>
       end
     end
     object TabDados: TTabSheet
@@ -416,5 +452,11 @@ object FormCliente: TFormCliente
           ' TO')
       end
     end
+  end
+  object DSClient: TDataSource
+    DataSet = DM.FDQueryExibir
+    OnDataChange = DSClientDataChange
+    Left = 24
+    Top = 96
   end
 end

@@ -12,7 +12,6 @@ object DM: TDM
       'Server=localhost'
       'CharacterSet=WIN1252'
       'DriverID=FB')
-    Connected = True
     LoginPrompt = False
     Left = 360
     Top = 16

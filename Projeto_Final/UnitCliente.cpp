@@ -101,13 +101,19 @@ void __fastcall TFormCliente::btnGravarClick(TObject *Sender)
 		DM->FDQueryIncluir->ParamByName("NOME")->AsString = EditName->Text;
 		DM->FDQueryIncluir->ParamByName("ENDERECO")->AsString = EditEndereco->Text;
 		DM->FDQueryIncluir->ParamByName("CIDADE")->AsString = EditCidade->Text;
-		DM->FDQueryIncluir->ParamByName("ESTADO")->AsString = ComboBoxUF->Text;
-        DM->FDQueryIncluir->ExecSQL();
+		DM->FDQueryIncluir->ParamByName("ESTADO")->AsString = ComboBoxUF->Text.Trim();
+		DM->FDQueryIncluir->ExecSQL();
 		break;
 
-		case 2:
-
-        break;
+		case 2: // Alteração de Registro
+		DM->FDQueryAlterar->Close();
+		DM->FDQueryAlterar->ParamByName("ID")->AsInteger = EditId->Text.ToInt();
+		DM->FDQueryAlterar->ParamByName("NOME")->AsString = EditName->Text;
+		DM->FDQueryAlterar->ParamByName("ENDERECO")->AsString = EditEndereco->Text;
+		DM->FDQueryAlterar->ParamByName("CIDADE")->AsString = EditCidade->Text;
+		DM->FDQueryAlterar->ParamByName("ESTADO")->AsString = ComboBoxUF->Text.Trim();
+		DM->FDQueryAlterar->ExecSQL();
+		break;
 	 }  // switch
 
 	 TabDados->TabVisible = true;
@@ -116,8 +122,47 @@ void __fastcall TFormCliente::btnGravarClick(TObject *Sender)
 	 TabArquivo->SetFocus();
 	 Hab_botoes(FormCliente);
 	 Habilitar_campos(false);
-     situacao = -1;
-   }  // if
+	 situacao = -1;
+   }   // if
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TFormCliente::TabArquivoShow(TObject *Sender)
+{
+	DM->FDQueryExibir->Close();
+	DM->FDQueryExibir->Open();
+}
+//---------------------------------------------------------------------------
+void __fastcall TFormCliente::DBForIntefaces()
+{
+   EditId->Text = DM->FDQueryExibir->FieldByName("ID")->AsString;
+   EditName->Text = DM->FDQueryExibir->FieldByName("NOME")->AsString;
+   EditEndereco->Text = DM->FDQueryExibir->FieldByName("ENDERECO")->AsString;
+   EditCidade->Text = DM->FDQueryExibir->FieldByName("CIDADE")->AsString;
+   ComboBoxUF->Text = DM->FDQueryExibir->FieldByName("ESTADO")->AsString;
+}
+void __fastcall TFormCliente::DSClientDataChange(TObject *Sender, TField *Field)
+{
+	DBForIntefaces();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TFormCliente::btnAlterarClick(TObject *Sender)
+{
+	TabArquivo->TabVisible = false;
+	TabDados->TabVisible = true;
+	Page1->ActivePage = (TabDados);
+
+	situacao = 2;
+	Habilitar_campos(true);
+	Des_botoes(FormCliente);
+    EditName->SetFocus();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TFormCliente::btnCancelarClick(TObject *Sender)
+{
+   TabArquivo->TabVisible = true;
 }
 //---------------------------------------------------------------------------
 
