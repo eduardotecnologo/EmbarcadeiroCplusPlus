@@ -245,6 +245,7 @@ object FormCliente: TFormCliente
         701FF41E812EF41E812EE90F701F9800680048004E0000000000000000000000
         000000000000}
       TabOrder = 4
+      OnClick = btnGravarClick
     end
     object btnSair: TBitBtn
       Left = 672

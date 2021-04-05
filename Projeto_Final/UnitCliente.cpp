@@ -84,8 +84,40 @@ void __fastcall TFormCliente::btnIncluirClick(TObject *Sender)
    LimparCampos();
    Habilitar_campos(true);
    Des_botoes(FormCliente);
-  // EditName->SetFocus;
+   EditName->SetFocus();
 }
 
+//---------------------------------------------------------------------------
+
+void __fastcall TFormCliente::btnGravarClick(TObject *Sender)
+{
+   if(Application->MessageBox(L"Confirma a Inclusão ou Alteração deste Cliente?",
+				   L"Confirmação", MB_YESNO + MB_ICONINFORMATION)==IDYES)
+   {
+	 switch(situacao)
+	 {
+		case 1: // incluir novo Registro
+		DM->FDQueryIncluir->Close();
+		DM->FDQueryIncluir->ParamByName("NOME")->AsString = EditName->Text;
+		DM->FDQueryIncluir->ParamByName("ENDERECO")->AsString = EditEndereco->Text;
+		DM->FDQueryIncluir->ParamByName("CIDADE")->AsString = EditCidade->Text;
+		DM->FDQueryIncluir->ParamByName("ESTADO")->AsString = ComboBoxUF->Text;
+        DM->FDQueryIncluir->ExecSQL();
+		break;
+
+		case 2:
+
+        break;
+	 }  // switch
+
+	 TabDados->TabVisible = true;
+	 TabArquivo->TabVisible = true;
+	 Page1->ActivePage = (TabArquivo);
+	 TabArquivo->SetFocus();
+	 Hab_botoes(FormCliente);
+	 Habilitar_campos(false);
+     situacao = -1;
+   }  // if
+}
 //---------------------------------------------------------------------------
 
