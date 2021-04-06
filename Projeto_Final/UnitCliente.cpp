@@ -163,6 +163,29 @@ void __fastcall TFormCliente::btnAlterarClick(TObject *Sender)
 void __fastcall TFormCliente::btnCancelarClick(TObject *Sender)
 {
    TabArquivo->TabVisible = true;
+   Page1->ActivePage = (TabArquivo);
+   TabArquivo->SetFocus();
+   Hab_botoes(FormCliente);
+   Habilitar_campos(false);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TFormCliente::btnExcluirClick(TObject *Sender)
+{
+   if(Application->MessageBox(L"Confirma a Exclusão deste cliente?",
+							  L"Exclusão", MB_YESNO + MB_ICONINFORMATION)==IDYES)
+   {
+	  DM->FDQueryExcluir->Close();
+	  DM->FDQueryExcluir->ParamByName("ID")->AsInteger = DM->FDQueryExibir->FieldByName("ID")->AsInteger;
+	  DM->FDQueryExcluir->ExecSQL();
+   } // if
+
+   DM->FDQueryExcluir->Close();
+   DM->FDQueryExcluir->Open();
+
+   TabDados->TabVisible = true;
+   TabArquivo->TabVisible = true;
+   Page1->ActivePage = (TabArquivo);
 }
 //---------------------------------------------------------------------------
 

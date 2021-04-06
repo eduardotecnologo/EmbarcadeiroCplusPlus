@@ -49,6 +49,7 @@ __published:	// IDE-managed Components
 	void __fastcall DSClientDataChange(TObject *Sender, TField *Field);
 	void __fastcall btnAlterarClick(TObject *Sender);
 	void __fastcall btnCancelarClick(TObject *Sender);
+	void __fastcall btnExcluirClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TFormCliente(TComponent* Owner);

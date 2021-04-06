@@ -158,6 +158,7 @@ object FormCliente: TFormCliente
         7417FF0A7417FF0A7417FF0A7417FF0A7417ED0A7417C50A74178F0A74170000
         000000000000}
       TabOrder = 2
+      OnClick = btnExcluirClick
     end
     object btnCancelar: TBitBtn
       Left = 448
