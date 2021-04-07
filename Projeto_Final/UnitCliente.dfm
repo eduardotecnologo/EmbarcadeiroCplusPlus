@@ -1,6 +1,7 @@
 object FormCliente: TFormCliente
   Left = 0
   Top = 0
+  BorderIcons = []
   Caption = 'Cadastro de Clientes'
   ClientHeight = 393
   ClientWidth = 881
@@ -11,6 +12,7 @@ object FormCliente: TFormCliente
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  Position = poDesktopCenter
   OnActivate = FormActivate
   OnClose = FormClose
   OnCreate = FormCreate
@@ -22,6 +24,7 @@ object FormCliente: TFormCliente
     Width = 881
     Height = 87
     Align = alBottom
+    BorderStyle = bsSingle
     Color = clSkyBlue
     ParentBackground = False
     TabOrder = 0
@@ -458,6 +461,6 @@ object FormCliente: TFormCliente
     DataSet = DM.FDQueryExibir
     OnDataChange = DSClientDataChange
     Left = 24
-    Top = 96
+    Top = 136
   end
 end

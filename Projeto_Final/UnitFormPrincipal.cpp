@@ -24,3 +24,22 @@ void __fastcall TFormPrincipal::btnClienteClick(TObject *Sender)
 }
 //---------------------------------------------------------------------------
 
+void __fastcall TFormPrincipal::btReportsClick(TObject *Sender)
+{
+   frxReportClient->ShowReport(true);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TFormPrincipal::Clientes1Click(TObject *Sender)
+{
+    TFormCliente * FormCliente = new TFormCliente(Owner);
+	FormCliente->Show();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TFormPrincipal::Clientes2Click(TObject *Sender)
+{
+	frxReportClient->ShowReport(true);
+}
+//---------------------------------------------------------------------------
+
