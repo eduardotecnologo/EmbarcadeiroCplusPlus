@@ -1,0 +1,8 @@
+#include <iostream>
+
+int _tmain()
+{
+	std::cout << "Hello" << std::endl;
+	system("PAUSE");
+	return EXIT_SUCCESS;
+}

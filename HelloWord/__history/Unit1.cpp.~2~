@@ -1,0 +1,21 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "Unit1.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TFrmMensagem *FrmMensagem;
+//---------------------------------------------------------------------------
+__fastcall TFrmMensagem::TFrmMensagem(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+void __fastcall TFrmMensagem::BtnEnviarClick(TObject *Sender)
+{
+	BtnEnviar->Text = "Hello ";
+}
+//---------------------------------------------------------------------------

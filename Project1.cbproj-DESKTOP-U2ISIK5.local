@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/04/01 17:39:05.000.054,=C:\Users\E\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2021/04/01 17:39:08.000.494,=C:\Users\E\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2021/04/01 17:55:17.000.616,C:\Users\E\OneDrive\Documentos\Embarcadero\Studio\Projects\MUltDevice.cpp=C:\Users\E\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2021/04/01 17:55:17.000.616,C:\Users\E\OneDrive\Documentos\Embarcadero\Studio\Projects\MUltDevice.h=C:\Users\E\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.h</Transaction>
+    <Transaction>2021/04/01 17:55:17.000.616,C:\Users\E\OneDrive\Documentos\Embarcadero\Studio\Projects\MUltDevice.fmx=C:\Users\E\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2021/04/01 17:55:32.000.868,C:\Users\E\OneDrive\Documentos\Embarcadero\Studio\Projects\MultDevicePCH1.h=C:\Users\E\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2021/04/01 17:55:36.000.636,C:\Users\E\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.cbproj=C:\Users\E\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>

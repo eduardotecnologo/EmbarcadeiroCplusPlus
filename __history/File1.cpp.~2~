@@ -1,0 +1,14 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+	int x = 47;
+	int y = 64;
+
+	int soma = x + y;
+	int mult = x*y;
+    int dif = y - x;
+
+    return 0;
+}

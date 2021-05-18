@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2021/04/01 12:49:04.580,=C:\Users\E\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2021/04/01 12:49:05.315,=C:\Users\E\OneDrive\Documentos\Embarcadero\Studio\Projects\File1.cpp</Transaction>
+    <Transaction>2021/04/01 13:08:13.659,C:\Users\E\OneDrive\Documentos\Embarcadero\Studio\Projects\CalculadoraPCH1.h=C:\Users\E\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2021/04/01 13:08:13.677,C:\Users\E\OneDrive\Documentos\Embarcadero\Studio\Projects\Calculadora.cbproj=C:\Users\E\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>
